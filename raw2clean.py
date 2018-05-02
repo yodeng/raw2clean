@@ -151,8 +151,7 @@ def parseArg():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,description= '''This Script is used to do quality control for rawdata fastq sequence.
 
 Version
-    Author: Yong Deng,yongdeng@capitalbiotech.com
-    Company: Capitalbiotech
+    Author: Yong Deng,yodeng@tju.edu.cn
     Version: 1.0
     Created: 04/30/2018 10:23:53 AM
 ''')
