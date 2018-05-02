@@ -20,7 +20,7 @@ quality countrol for raw fastq files
 	6. 去除长度小于给定长度的reads （默认50）
     
 	7. 去除非配对的reads
-  
+    
 $ python raw2clean.py  -h
 usage: raw2clean.py [-h] [-pe reads reads | -se se-reads] [-l minlength]
                     [-lq q-score] [-rq q-score] [-stripN] [-N N_percent]
@@ -74,7 +74,7 @@ optional arguments:
                         PHRED quality type, 33 or 64, default:33
   -o OUT_DIR, --out_dir OUT_DIR
                         the output directory
-
+    
 
 
 
@@ -84,7 +84,6 @@ get a summary along the position of you fastq sequence file
 
 
 功能：对fastq序列文件进行统计，统计每个位置的碱基和质量分布情况。
-
 
 $ python summary_fastq.py -h
 
@@ -105,4 +104,3 @@ optional arguments:
                         PHRED quality type, 33 or 64, default:33
   -o OUT_DIR, --out_dir OUT_DIR
                         the output directory
-
