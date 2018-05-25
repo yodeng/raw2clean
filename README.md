@@ -6,20 +6,21 @@ quality countrol for raw fastq files
 功能：对已除去接头的原始fastq序列数据进行质控，支持单端测序和双端测序数据。
 
 具体质控标准如下：
+	1. reads基于overlap进行分析，检测adapter并去除
     
-	1. 截去reads两端的N碱基 （可选）
+	2. 截去reads两端的N碱基 （可选）
     
-	2. 截去reads两端的低质量碱基，低质量参数可设置 （可选）
+	3. 截去reads两端的低质量碱基，低质量参数可设置 （可选）
     
-	3. 按指定滑动窗口进行质控，窗口平均质量小于给定参数时，从该位置截去序列 （可选）
+	4. 按指定滑动窗口对reads两端进行质控，窗口平均质量小于给定参数时，截去两端低质量序列（可选）
     
-	4. 去除reads中N碱基占5%的reads （默认5%）
+	5. 去除reads中N碱基占5%的reads （默认5%）
     
-	5. 去除reads中低质量碱基大于30%的reads（默认30%）
+	6. 去除reads中低质量碱基大于30%的reads（默认30%）
     
-	6. 去除长度小于给定长度的reads （默认50）
+	7. 去除长度小于给定长度的reads （默认50）
     
-	7. 去除非配对的reads
+	8. 去除非配对的reads
     
 $ python raw2clean.py  -h
 usage: raw2clean.py [-h] [-pe reads reads | -se se-reads] [-l minlength]
