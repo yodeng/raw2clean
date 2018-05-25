@@ -6,6 +6,7 @@ quality countrol for raw fastq files
 功能：对已除去接头的原始fastq序列数据进行质控，支持单端测序和双端测序数据。
 
 具体质控标准如下：
+
 	1. reads基于overlap进行分析，检测adapter并去除
     
 	2. 截去reads两端的N碱基 （可选）
@@ -45,7 +46,7 @@ optional arguments:
                         you input sigle-end sequence fastq file, *.gz or .bz2
                         can be allowed
   -l minlength, --length minlength
-                        The minmum length of one read to keep, default:50
+                        The minmum length of one read to keep, default:50			
   -lq q-score, --left_low_q q-score
                         If passed, trim the base has qual score less than the
                         given value in left ends of the read. 0 by default
