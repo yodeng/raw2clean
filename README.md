@@ -7,7 +7,7 @@ quality countrol for raw fastq files
 
 具体质控标准如下：
 
-	1. reads基于overlap进行分析，检测adapter并去除
+	1. reads基于overlap进行分析，检测空载的reads,即overlap直接首尾相连的reads并去除
     
 	2. 截去reads两端的N碱基 （可选）
     
