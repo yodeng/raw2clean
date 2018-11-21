@@ -2,7 +2,7 @@
 #coding:utf-8
 ##
 '''
-raw2clean version 1.0.6
+raw2clean version 1.0.7
 Copyright (C) 2018-2020 Yong Deng <yodeng@tju.edu.cn>
 '''
 
