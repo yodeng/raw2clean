@@ -2,7 +2,7 @@
 #coding:utf-8
 ##
 '''
-raw2clean version 1.0.7
+raw2clean version 1.0.8
 Copyright (C) 2018-2020 Yong Deng <yodeng@tju.edu.cn>
 '''
 
@@ -11,7 +11,7 @@ import argparse,multiprocessing,gzip,bz2file,os,gc,datetime,sys
 from os.path import abspath,join
 from itertools import count
 
-__version__ = "1.0.7"
+__version__ = "1.0.8"
 
 def reverseComplement(origin):
     length = len(origin)

@@ -1,10 +1,11 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages  
+from setuptools import setup
 
 setup(
     name = "raw2clean",
-    version = "1.0.7",
-    packages = find_packages(),
+    version = "1.0.8",
+    packages = ["raw2clean"],
+    package_dir = {"raw2clean":"src"},
     author="Yong Deng",
     author_email = "yodeng@tju.edu.cn",
     description = "QC for rawdata without adapter",
