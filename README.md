@@ -10,8 +10,11 @@ raw2clean
         python setup.py install
     
 
-#### 功能：
+#### 功能
     对已除去接头的原始fastq序列数据进行质控，支持单端测序和双端测序数据。
+    
+#### 用法
+    raw2clean --help    
 
 #### 具体质控标准如下：
 
@@ -31,6 +34,9 @@ sumfq
 
 #### 功能：
     统计fastq文件中每个位置的不同碱基的数目以及碱基错误率，支持SE和PE
+
+#### 用法：
+    sumfq --help
     
 #### output:
 * *.clean.fq.sum_avgQ.txt
